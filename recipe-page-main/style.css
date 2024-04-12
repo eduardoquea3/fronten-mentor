@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --Nutmeg: #854632;
+  --Dark_Raspberry: #7b284f;
+  --White: #ffffff;
+  --Rose_White: #fff5fa;
+  --Eggshell: #f3e6d8;
+  --Light_Grey: #e4ded8;
+  --Wenge_Brown: #5f574e;
+  --Dark_Charcoal: #302d2c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+}
+
+body {
+  background: var(--Eggshell);
+  width: 100vw;
+}
+
+main {
+  background: white;
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+img {
+  width: 100%;
+}
+
+article {
+  padding: 20px;
+  background: var(--Rose_White);
+  border-radius: 20px;
+}
+
+h2 {
+  color: var(--Nutmeg);
+}
+
+h3 {
+  color: var(--Dark_Raspberry);
+  font-weight: 700;
+}
+
+p,
+li {
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+li span {
+  font-weight: 600;
+  color: var(--Wenge_Brown);
+}
+
+li {
+  color: var(--Wenge_Brown);
+}
+
+ul,
+ol {
+  padding: 15px;
+}
+
+img {
+  width: 100vw;
+}
+
+hr {
+  color: var(--Rose_White);
+}
+
+ol {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  & span {
+    font-family: "Young Serif", serif;
+    font-size: 16px;
+  }
+}
+
+.preparation{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tb{
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+
+.tb hr{
+  grid-column: span 2;
+  color: var(--Rose_White);
+}
+
+.tb p{
+  width: 100%;
+  padding: 10px 0 10px 30px;
+  color: var(--Wenge_Brown);
+}
+
+.tb .quanty{
+  color: var(--Nutmeg);
+  font-weight: 700;
+}
+
+.ingredients{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (width > 900px){
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+  }
+  main{
+    border-radius: 30px;
+    width: 60%;
+    padding: 40px;
+  }
+  img{
+    width: 100%;
+    border-radius: 10px;
+  }
+}
